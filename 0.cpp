@@ -16,10 +16,7 @@ using str = string;
 #endif
 
 void solve() {
-	int p = 4;
-	p("Hello World");
-	vec<int> a = {1, 2, 3, 4};
-	d(a);
+
 }
 
 int main() {
