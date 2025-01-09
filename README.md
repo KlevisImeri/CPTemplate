@@ -1,2 +1,2 @@
-# CPSetUp
-Competitive Programming Set Up
+# CPTemplate
+Competitive Programming Template
