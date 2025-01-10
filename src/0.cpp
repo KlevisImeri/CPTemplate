@@ -1,6 +1,5 @@
 // clang-format off
 #include <bits/stdc++.h>
-#include <sys/types.h>
 using namespace std;
 using i64 = long long;
 using str = string;
@@ -13,8 +12,10 @@ using str = string;
 #ifdef LOCAL
 #include "debug.h"
 #else
-#define d(x) 69
+#define d(x...)
+#define out(x...)
 #endif
+
 
 void solve() {
 
