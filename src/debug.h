@@ -5,6 +5,18 @@ void print(const char* x){cerr<<'"'<<x<<'"';};
 void print(bool x){cerr<<(x?"true":"false");}
 
 template <typename T>
+void print(T& x);
+
+template <typename A, typename B>
+void print(pair<A, B>& p) {
+  cerr<<"{";
+	print(p.first);
+	cerr<<',';
+	print(p.second);
+	cerr<<"}";
+}
+
+template <typename T>
 void print(T& x){
   if constexpr(is_arithmetic_v<T>) cerr<<x;
 	else if constexpr(requires{x.print();}) x.print();
