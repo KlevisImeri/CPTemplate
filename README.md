@@ -32,7 +32,7 @@ void print(pair<A, B>& p) {
 
 
 template <typename T, typename Container>
-void print(queue<T, Container> q) {
+void print(queue<T, Container> q) { //if you use dequeue for this you have to be carefull of the direction
     cerr << '[';
     bool first = true;
     while (!q.empty()) {
@@ -55,17 +55,6 @@ void print(priority_queue<T, Container, Compare> pq) {
         first = false;
     }
     cerr << ']';
-}
-
-template <typename T, typename Container>
-void print(stack<T, Container> st) {
-    vector<T> elements;
-    while (!st.empty()) {
-        elements.push_back(st.top());
-        st.pop();
-    }
-    reverse(all(elements));
-    print(elements);
 }
 
 template <typename T>
